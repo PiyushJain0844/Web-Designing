@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+</head>
+<body>
+
+  <h1>Checkout</h1>
+
+  <!-- Cart Section -->
+  <section>
+    <h2>Your Cart</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A cube-shaped product in the shopping cart">
+    <p>Cube Toy</p>
+    <p>$29.99</p>
+  </section>
+
+  <!-- Payment Section -->
+  <section>
+    <h2>Payment Information</h2>
+
+    <form>
+      <!-- Cardholder Name -->
+      <label for="card-name">
+        Cardholder Name <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="card-name" name="card-name" required>
+
+      <!-- Card Number -->
+      <label for="card-number">
+        Card Number <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help">
+
+      <p id="card-number-help">
+        Please enter your 16-digit card number without spaces or dashes.
+      </p>
+
+      <!-- Expiry Date -->
+      <label for="expiry-date"> Expiry Date </label>
+      <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+      <!-- CVV -->
+      <label for="cvv"> CVV </label>
+      <input type="text" id="cvv" name="cvv">
+
+      <!-- Submit -->
+      <input type="submit" value="Place Order">
+    </form>
+  </section>
+
+</body>
+</html> 
