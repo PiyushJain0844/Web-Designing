@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <!-- Page Title -->
+  <h1 id="title">Student Feedback Survey</h1>
+
+  <!-- Description -->
+  <p id="description"> Please fill out this form to help us improve our learning platform. </p>
+
+  <!-- Survey Form -->
+  <form id="survey-form">
+
+    <!-- Name -->
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your full name" required >
+
+    <br><br>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email address" required >
+
+    <br><br>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="10" max="100" placeholder="Enter your age" >
+
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Current Role</label>
+    <select id="dropdown">
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <p>Would you recommend this platform?</p>
+    <input type="radio" name="recommend" value="yes" /> Yes
+    <input type="radio" name="recommend" value="no" /> No
+
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>What topics are you interested in?</p>
+    <input type="checkbox" value="html" /> HTML  
+    <input type="checkbox" value="css" /> CSS  
+    <input type="checkbox" value="javascript" /> JavaScript
+
+    <br><br>
+
+    <!-- Textarea -->
+    <p>Additional Comments</p>
+    <textarea placeholder="Enter your comments here..."></textarea>
+
+    <br><br>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html> 
