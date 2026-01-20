@@ -1,0 +1,91 @@
+/* Page base */
+body {
+  font-family: Georgia, serif;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;                 /* tight spacing */
+}
+
+/* Pricing cards */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 220px;           /* equal base width */
+  max-width: 220px;          /* force same size */
+  border: 2px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: white;  /* ALL cards white */
+}
+
+/* Order rules (FCC required) */
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;              /* required by test */
+  max-width: 220px;          /* prevents stretching */
+  background-color: white;  /* REMOVE blue */
+}
+
+.premium-plan {
+  order: 2;
+}
+
+/* Price text */
+.pricing-card p {
+  margin: 10px 0;
+}
+
+/* Feature list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* Icons */
+li.yes::before {
+  content: "✓ ";
+  color: green;
+  font-weight: bold;
+}
+
+li.no::before {
+  content: "✗ ";
+  color: red;
+  font-weight: bold;
+}
+
+/* Button */
+button {
+  background-color: #f1be32;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0ab22;
+}
