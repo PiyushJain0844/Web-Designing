@@ -1,0 +1,58 @@
+/* Body and container */
+body {
+  background-color: #e0cce0; /* light purple */
+  font-family: "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card style */
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 180px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+/* Left section top */
+.left {
+  align-self: flex-start;
+}
+
+/* Middle section center stacked vertically */
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+
+/* Right section bottom */
+.right {
+  align-self: flex-end;
+}
+
+/* Color for suits */
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+} 
