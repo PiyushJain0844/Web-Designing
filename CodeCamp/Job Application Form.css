@@ -1,0 +1,122 @@
+/* Page background */
+body {
+  background-color: #1b1f3b;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.container {
+  background-color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+/* Inputs, select, textarea */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+/* First input special style (test 19) */
+input:first-of-type {
+  border-radius: 8px;
+}
+
+/* Textarea */
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Focus state (test 11) */
+input:focus,
+textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+
+/* Invalid state (test 12) */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* Valid state (test 13) */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* Radio group */
+.radio-group {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+/* Radio labels inline */
+.radio-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* Radio buttons base */
+.radio-group input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+/* ✅ REQUIRED: checked radio styles (tests 15, 16, 17) */
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+/* ✅ REQUIRED: change label color when radio checked (test 18) */
+.radio-group label:has(input:checked) {
+  color: green;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hover effect (test 14) */
+button:hover {
+  background-color: darkgreen;
+} 
