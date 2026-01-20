@@ -1,0 +1,54 @@
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.color-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.color1 {
+  background-color: #800080; /* Hexadecimal */
+}
+
+.color2 {
+  background-color: rgb(0, 128, 0); /* RGB */
+}
+
+.color3 {
+  background-color: orange; /* Predefined word */
+}
+
+.color4 {
+  background-color: hsl(60, 60%, 40%); /* HSL */
+}
+
+.color5 {
+  background-color: red; /* Any color */
+} 
