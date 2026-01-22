@@ -1,0 +1,68 @@
+:root {
+  --color0: #ffffff;
+  --color1: #ccffcc;
+  --color2: #99ff99;
+  --color3: #66ff66;
+  --color4: #33cc33;
+  --color5: #009900;
+
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+
+th, td {
+  width: 80px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+th.time {
+  font-weight: bold;
+}
+
+/* Availability colors */
+.available-0 { background-color: var(--color0); }
+.available-1 { background-color: var(--color1); }
+.available-2 { background-color: var(--color2); }
+.available-3 { background-color: var(--color3); }
+.available-4 { background-color: var(--color4); }
+.available-5 { background-color: var(--color5); }
+
+/* Borders */
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+/* Legend */
+#legend {
+  width: 320px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#legend-gradient {
+  height: 20px;
+  margin-top: 6px;
+  background-image: linear-gradient(
+    var(--color0) 0% 17%,
+    var(--color1) 17% 33%,
+    var(--color2) 33% 50%,
+    var(--color3) 50% 67%,
+    var(--color4) 67% 83%,
+    var(--color5) 83% 100%
+  );
+} 
