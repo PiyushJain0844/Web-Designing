@@ -1,0 +1,65 @@
+/* GENERAL */
+span {
+  display: inline-block;
+}
+
+/* ROW BACKGROUNDS USING ATTRIBUTE SELECTORS */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #c8e6c9, #ffffff);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff9c4, #ffffff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #bbdefb, #ffffff);
+}
+
+/* STATUS STYLES */
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #f4a261;
+  background-image: linear-gradient(to right, #f4a261, #e9c46a);
+}
+tr[class="read"] span[class="status"] {
+  border: 2px solid #2a9d8f;
+  background-image: linear-gradient(to right, #2a9d8f, #a8dadc);
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #e76f51;
+  background-image: linear-gradient(to right, #e76f51, #f4a261);
+}
+
+
+/* STATUS + RATE COMMON SIZE */
+span[class="status"],
+span[class^="rate"] {
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+}
+
+/* RATING DOTS */
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #e0e0e0;
+}
+
+/* ONE STAR */
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to right, gold, orange);
+}
+
+/* TWO STARS */
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to right, gold, orange);
+}
+
+/* THREE STARS */
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, gold, orange);
+} 
