@@ -1,0 +1,44 @@
+.title {
+    text-align: center;
+}
+
+/* Block Example */
+.highlight {
+    background: blue;
+    color: white;
+    padding: 10px;
+    margin: 2px 0; 
+}
+
+/* Inline Example */
+.inline {
+    display: inline;
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+/* Inline-Block Example */
+.inlineBlock {
+    display: inline-block;
+    background: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+/* Float Example */
+.float {
+    float: left;
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+} 
+
+
